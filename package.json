@@ -1,0 +1,35 @@
+{
+  "name": "linkbox",
+  "version": "1.0.0",
+  "description": "linkbox remote",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rimraf dist && yarn build:main",
+    "build:main": "tsc -p tsconfig.build.json",
+    "build:watch": "tsc -p tsconfig.build.json --watch",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint . --ext .ts"
+  },
+  "author": "Simon Holzmayer",
+  "license": "MIT",
+  "keywords": [
+    "linkbox"
+  ],
+  "manufacturer": "linkbox",
+  "product": "Web API and Controller",
+  "shortname": "linkbox",
+  "dependencies": {
+    "graphql": "15.5.0",
+    "graphql-request": "3.4.0",
+    "linkbox-sdk": "1.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.15.2",
+    "@typescript-eslint/parser": "4.15.2",
+    "eslint": "7.20.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-prettier": "3.3.1",
+    "prettier": "2.2.1",
+    "typescript": "4.2.3"
+  }
+}
