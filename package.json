@@ -4,6 +4,7 @@
   "description": "linkbox remote",
   "main": "dist/index.js",
   "scripts": {
+    "dev": "yarn build:watch",
     "build": "rimraf dist && yarn build:main",
     "build:main": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -p tsconfig.build.json --watch",
