@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "yarn build:watch",
     "build": "npx rimraf dist && yarn build:main",
-    "build:main": "tsc -p tsconfig.build.json",
+    "build:main": "npx typescript@4.2.3 -p tsconfig.build.json",
     "build:watch": "tsc -p tsconfig.build.json --watch",
     "postinstall": "yarn build",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -23,6 +23,7 @@
   "dependencies": {
     "graphql": "15.5.0",
     "graphql-request": "3.4.0",
+    "graphql-tag": "2.11.0",
     "linkbox-sdk": "1.1.1"
   },
   "devDependencies": {
