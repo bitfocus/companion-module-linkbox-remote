@@ -1,3 +1,11 @@
+## [1.1.7](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.6...1.1.7) (2021-03-22)
+
+
+### Bug Fixes
+
+* feedback colors ([d5cee5d](https://github.com/bitfocus/companion-module-linkbox-remote/commit/d5cee5df341c527ee540d9ceb33ac38f8b181a72))
+* undefined options in action handler ([7a80d77](https://github.com/bitfocus/companion-module-linkbox-remote/commit/7a80d7712d131e4405f4250a7bfc7a95f36a80c5))
+
 ## [1.1.6](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.5...1.1.6) (2021-03-22)
 
 
