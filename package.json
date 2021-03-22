@@ -1,5 +1,5 @@
 {
-  "name": "linkbox",
+  "name": "linkbox-remote",
   "version": "1.1.0",
   "description": "linkbox remote",
   "main": "dist/index.js",
@@ -18,7 +18,7 @@
   ],
   "manufacturer": "linkbox",
   "product": "Web API and Controller",
-  "shortname": "linkbox",
+  "shortname": "linkbox-remote",
   "dependencies": {
     "graphql": "15.5.0",
     "graphql-request": "3.4.0",
