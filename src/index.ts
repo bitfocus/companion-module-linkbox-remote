@@ -44,10 +44,10 @@ class Linkbox extends instance_skel {
     );
   }
 
-  public async action({ action }) {
+  public async action({ action, options }) {
     switch (action) {
       case ActionType.StartRecording:
-        const { sourceId } = action.options;
+        const { sourceId } = options;
         try {
           this.recorders[sourceId] = { isRecording: true };
           this.checkFeedbacks(FeedbackType.Recording);
