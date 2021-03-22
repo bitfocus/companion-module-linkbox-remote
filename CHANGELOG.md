@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.1...1.1.2) (2021-03-22)
+
+
+### Bug Fixes
+
+* access of config_fields in companion ([52fc6d1](https://github.com/bitfocus/companion-module-linkbox-remote/commit/52fc6d129f6456aeb996273cb59b8c71e62f1210))
+
 ## [1.1.1](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.0...1.1.1) (2021-03-22)
 
 # 1.1.0 (2021-03-22)
