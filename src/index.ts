@@ -72,7 +72,7 @@ class Linkbox extends instance_skel {
     await this.syncSources();
 
     this.setupActions();
-    this.setFeedbackDefinitions(getFeedbacks(this.sources));
+    this.setFeedbackDefinitions(getFeedbacks(this, this.sources));
     this.initTimer();
     this.status(this.STATE_OK);
   }

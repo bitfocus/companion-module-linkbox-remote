@@ -5,7 +5,7 @@ export enum FeedbackType {
   Recording = 'recording',
 }
 
-export const getFeedbacks = (sources: Source[]) => ({
+export const getFeedbacks = (instance: any, sources: Source[]) => ({
   [FeedbackType.Recording]: {
     label: 'Change button color if recording is active',
     description: 'If there is an active recorder, set the button to this color',
@@ -14,13 +14,13 @@ export const getFeedbacks = (sources: Source[]) => ({
         type: 'colorpicker',
         label: 'Foreground color',
         id: 'fg',
-        default: 'rgb(255, 255, 255)',
+        default: instance.rgb(255, 255, 255),
       },
       {
         type: 'colorpicker',
         label: 'Background color',
         id: 'bg',
-        default: 'rgb(233, 70, 70)',
+        default: instance.rgb(233, 70, 70),
       },
       sourceSelectField(sources),
     ],
