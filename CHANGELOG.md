@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.2...1.1.3) (2021-03-22)
+
+
+### Bug Fixes
+
+* add missing rimraf ([8b453f4](https://github.com/bitfocus/companion-module-linkbox-remote/commit/8b453f4364c3e719d2de8a90a9e9219a16fadec4))
+
 ## [1.1.2](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.1...1.1.2) (2021-03-22)
 
 
