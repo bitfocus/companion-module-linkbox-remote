@@ -1,3 +1,5 @@
+## [1.1.1](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.0...1.1.1) (2021-03-22)
+
 # 1.1.0 (2021-03-22)
 
 
