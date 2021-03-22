@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.5...1.1.6) (2021-03-22)
+
+
+### Bug Fixes
+
+* undo name ([6e4b647](https://github.com/bitfocus/companion-module-linkbox-remote/commit/6e4b6476c83926cadd1a25d91ba1e154d25e7e52))
+
 ## [1.1.5](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.4...1.1.5) (2021-03-22)
 
 
