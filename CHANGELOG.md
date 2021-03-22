@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.3...1.1.4) (2021-03-22)
+
+
+### Bug Fixes
+
+* exec rimraf with npx in companion integration ([7c4175c](https://github.com/bitfocus/companion-module-linkbox-remote/commit/7c4175c9055e036b21b5741ca8a5caf144ee88aa))
+
 ## [1.1.3](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.2...1.1.3) (2021-03-22)
 
 
