@@ -1,4 +1,4 @@
-var instance_skel = require('../../../instance_skel');
+const instance_skel = require('../../../instance_skel');
 import { InstanceConfig, configFields } from './inputs/config-fields';
 import * as actions from './inputs/actions';
 import { GraphQLClient } from 'graphql-request';
@@ -25,7 +25,7 @@ class Linkbox extends instance_skel {
     this.setActions(getActions(this.sources));
   }
 
-  public get config_fields() {
+  public config_fields() {
     return configFields;
   }
 
