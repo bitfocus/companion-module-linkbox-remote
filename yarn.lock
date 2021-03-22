@@ -2048,10 +2048,10 @@ lines-and-columns@^1.1.6:
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
   integrity sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
 
-linkbox-sdk@1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/linkbox-sdk/-/linkbox-sdk-1.1.0.tgz#76ed32e4eec1334d0eeac75c5e3b1cfbe06f9cc1"
-  integrity sha512-021rnFbYBqOx/TcDHo/KnLipsC6z0prKWk1sQ+iatNmLLOpzYYvMcvoYUlORSCrMZ6kK4s5jlr30/uOuKwH6ng==
+linkbox-sdk@1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/linkbox-sdk/-/linkbox-sdk-1.1.1.tgz#54204001ef012e4693aa53e4a5c61412b9b39765"
+  integrity sha512-Mo7Bb4LwOKOfNrIoB0ZN1sGQ70RLo07j7pntxC8v+dQifO+GoSsil4Src0Jca9BnyMazZ/TKs42PykH2jdwvMg==
   dependencies:
     graphql "15.5.0"
     graphql-request "3.4.0"

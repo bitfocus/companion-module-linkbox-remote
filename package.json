@@ -22,7 +22,7 @@
   "dependencies": {
     "graphql": "15.5.0",
     "graphql-request": "3.4.0",
-    "linkbox-sdk": "1.1.0"
+    "linkbox-sdk": "1.1.1"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "2.0.1",
