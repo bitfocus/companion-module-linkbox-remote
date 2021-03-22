@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.4...1.1.5) (2021-03-22)
+
+
+### Bug Fixes
+
+* build in companion ([4b9100e](https://github.com/bitfocus/companion-module-linkbox-remote/commit/4b9100e19c6407b9c7fce52048306c4bea35d1c2))
+
 ## [1.1.4](https://github.com/bitfocus/companion-module-linkbox-remote/compare/1.1.3...1.1.4) (2021-03-22)
 
 
