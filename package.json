@@ -8,6 +8,7 @@
     "build": "rimraf dist && yarn build:main",
     "build:main": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -p tsconfig.build.json --watch",
+    "postinstall": "yarn build",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "eslint . --ext .ts"
   },
