@@ -41,7 +41,8 @@
   "release-it": {
     "git": {
       "commitMessage": "chore: Release version ${version}",
-      "requireCleanWorkingDir": true
+      "requireCleanWorkingDir": true,
+      "tagName": "v${version}"
     },
     "npm": {
       "publish": false
