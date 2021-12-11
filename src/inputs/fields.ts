@@ -1,4 +1,4 @@
-import { Source } from 'linkbox-sdk'
+import { Source } from '@linkbox/sdk'
 
 export const sourceSelectField = (sources: Source[]) => ({
 	type: 'dropdown',

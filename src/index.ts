@@ -2,7 +2,7 @@ const instance_skel = require('../../../instance_skel')
 import { InstanceConfig, configFields } from './inputs/config-fields'
 import * as actions from './inputs/actions'
 import { GraphQLClient } from 'graphql-request'
-import { getSdk, Source } from 'linkbox-sdk'
+import { getSdk, Source } from '@linkbox/sdk'
 import { ActionType, getActions } from './inputs/actions'
 import { FeedbackType, getFeedbacks } from './inputs/feedbacks'
 

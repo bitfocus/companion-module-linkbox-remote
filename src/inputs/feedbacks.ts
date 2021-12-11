@@ -1,4 +1,4 @@
-import { Source } from 'linkbox-sdk'
+import { Source } from '@linkbox/sdk'
 import { sourceSelectField } from './fields'
 
 export enum FeedbackType {
