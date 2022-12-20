@@ -31,15 +31,23 @@ class Linkbox extends instance_skel {
 
 	private initializeApiClient(config: InstanceConfig): void {
 		const { apiToken, apiUrl } = config
-		const gqlClient = new GraphQLClient(apiUrl, {
-			headers: { authorization: `Bearer ${apiToken}` },
-		})
-		this.client = getSdk(gqlClient)
+		if (apiUrl && apiToken) {
+			const gqlClient = new GraphQLClient(apiUrl, {
+				headers: { authorization: `Bearer ${apiToken}` },
+			})
+			this.client = getSdk(gqlClient)
+		} else {
+			this.client = undefined
+		}
 	}
 
 	private async syncSources(): Promise<void> {
-		const { sources } = await this.client.sources()
-		this.sources = sources.filter((source: Source) => source['__typename'] === 'InterfaceSource')
+		if (this.client) {
+			const { sources } = await this.client.sources()
+			this.sources = sources.filter((source: Source) => source['__typename'] === 'InterfaceSource')
+		} else {
+			this.sources = []
+		}
 	}
 
 	public async action({ action, options }) {
@@ -99,11 +107,15 @@ class Linkbox extends instance_skel {
 		if (!this.Timer) {
 			const poll = async () => {
 				Object.keys(this.recorders).forEach(async (sourceId) => {
-					const { isRecording } = await this.client.isRecording({
-						where: { id: sourceId },
-					})
-					this.recorders[sourceId].isRecording = isRecording
-					this.checkFeedbacks(FeedbackType.Recording, { foo: 'bar' })
+					if (this.client) {
+						const { isRecording } = await this.client.isRecording({
+							where: { id: sourceId },
+						})
+						this.recorders[sourceId].isRecording = isRecording
+					} else {
+						this.recorders[sourceId].isRecording = false
+					}
+					this.checkFeedbacks(FeedbackType.Recording)
 				})
 			}
 			this.Timer = setInterval(() => poll(), 5000)
