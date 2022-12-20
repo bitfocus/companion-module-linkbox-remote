@@ -1,12 +1,12 @@
 {
 	"name": "linkbox-remote",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "linkbox remote",
 	"main": "dist/index.js",
 	"scripts": {
 		"dev": "yarn build:watch",
 		"build": "npx rimraf dist && yarn build:main",
-		"build:main": "npx typescript@4.2.3 -p tsconfig.build.json",
+		"build:main": "npx --package=typescript@4.2.3 -c 'tsc -p tsconfig.build.json'",
 		"build:watch": "tsc -p tsconfig.build.json --watch",
 		"postinstall": "yarn build",
 		"format": "prettier --write \"src/**/*.ts\"",
