@@ -36,8 +36,10 @@ class Linkbox extends instance_skel {
 				headers: { authorization: `Bearer ${apiToken}` },
 			})
 			this.client = getSdk(gqlClient)
+			this.status(this.STATE_OK)
 		} else {
 			this.client = undefined
+			this.status(this.STATE_ERROR)
 		}
 	}
 
@@ -80,7 +82,6 @@ class Linkbox extends instance_skel {
 		this.setupActions()
 		this.setFeedbackDefinitions(getFeedbacks(this, this.sources))
 		this.initTimer()
-		this.status(this.STATE_OK)
 	}
 
 	public updateConfig(config: InstanceConfig) {
